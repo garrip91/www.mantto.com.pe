@@ -17,7 +17,8 @@ var revapi22, tpj;
         }
         if (tpj("#rev_slider_22_1").revolution == undefined) {
             revslider_showDoubleJqueryError("#rev_slider_22_1");
-        } else {
+        }
+		else {
             revapi22 = tpj("#rev_slider_22_1").show().revolution({
                 sliderType: "standard",
                 jsFileLocation: "//www.mantto.com.pe/wp-content/plugins/revslider/public/assets/js/",

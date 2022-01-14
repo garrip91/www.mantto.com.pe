@@ -1,0 +1,7 @@
+body.custom-background {
+    background-image: url("https://www.mantto.com.pe/wp-content/uploads/2019/08/mantto-slider-1.jpg");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
