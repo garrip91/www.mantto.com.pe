@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -14,27 +16,37 @@
     <link rel="alternate" type="application/rss+xml" title="MANTTO &raquo; Feed" href="/feed/" />
     <link rel="alternate" type="application/rss+xml" title="MANTTO &raquo; Feed de los comentarios" href="/comments/feed/" />
     <link href="//db.onlinewebfonts.com/c/0e979bd4a3c1c6ac788ed57ac569667f?family=revicons" rel="stylesheet" type="text/css"/>
-    <!-- style N. 1 base -->
-    <style>
+    
+	<!-- style N. 1 base -->
+    <!--<style>
         style_1.css
-    </style>
+    </style>-->
+	<link rel="stylesheet" type="text/css" href="{% static 'ManttoApp/css/base/style_1.css' %}">
 	<!--------------------->
+	
 	<!-- script N. 1 base -->
-    <script type="text/javascript">
+    <!--<script type="text/javascript">
         script_1.js
-    </script>
+    </script>-->
+	<script type="text/javascript" src="{% static 'ManttoApp/js/base/script_1.js' %}"></script>
 	<!---------------------->
+	
     <!-- style N. 2 base -->
-    <style type="text/css">
+    <!--<style type="text/css">
         style_2.css
-    </style>
+    </style>-->
+	<link rel="stylesheet" type="text/css" href="{% static 'ManttoApp/css/base/style_2.css' %}">
 	<!------------>
+	
     <link rel='stylesheet' id='wp-block-library-css' href='https://www.mantto.com.pe/wp-includes/css/dist/block-library/style.min.css?ver=5.8.2' type='text/css' media='all' />
-    <!-- style N. 3 base -->
-	<style id='wp-block-library-theme-inline-css' type='text/css'>
+    
+	<!-- style N. 3 base -->
+	<!--<style id='wp-block-library-theme-inline-css' type='text/css'>
         style_3.css
-    </style>
+    </style>-->
+	<link rel="stylesheet" id='wp-block-library-theme-inline-css' type="text/css" href="{% static 'ManttoApp/css/base/style_3.css' %}">
 	<!------------>
+	
     <link rel='stylesheet' id='contact-form-7-css' href='https://www.mantto.com.pe/wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
     <link rel='stylesheet' id='essential-grid-plugin-settings-css' href='https://www.mantto.com.pe/wp-content/plugins/essential-grid/public/assets/css/settings.css' type='text/css' media='all' />
     <link rel='stylesheet' id='tp-open-sans-css' href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800&#038;ver=5.8.2' type='text/css' media='all' />
@@ -45,20 +57,26 @@
     <link rel='stylesheet' id='tp-karla-css' href='https://fonts.googleapis.com/css?family=Karla%3A400%2C700&#038;ver=5.8.2' type='text/css' media='all' />
     <link rel='stylesheet' id='tp-fontello-css' href='https://www.mantto.com.pe/wp-content/plugins/essential-grid/public/assets/font/fontello/css/fontello.css' type='text/css' media='all' />
     <link rel='stylesheet' id='rs-plugin-settings-css' href='https://www.mantto.com.pe/wp-content/plugins/revslider/public/assets/css/settings.css' type='text/css' media='all' />
-    <!-- style N. 4 base -->
-    <style id='rs-plugin-settings-inline-css' type='text/css'>
+    
+	<!-- style N. 4 base -->
+    <!--<style id='rs-plugin-settings-inline-css' type='text/css'>
         style_4.css
-    </style>
+    </style>-->
+	<link rel="stylesheet" id='rs-plugin-settings-inline-css' type="text/css" href="{% static 'ManttoApp/css/base/style_4.css' %}">
 	<!---------------->
+	
     <link rel='stylesheet' id='wp-job-manager-job-listings-css' href='https://www.mantto.com.pe/wp-content/plugins/wp-job-manager/assets/dist/css/job-listings.css' type='text/css' media='all' />
     <link rel='stylesheet' id='mc4wp-form-themes-css' href='https://www.mantto.com.pe/wp-content/plugins/mailchimp-for-wp/assets/css/form-themes.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='thememove-style-css' href='https://www.mantto.com.pe/wp-content/themes/structure/style.css' type='text/css' media='all' />
-    <link rel='stylesheet' id='thememove-main-css' href='https://www.mantto.com.pe/wp-content/themes/structure/css/main-style.css' type='text/css' media='all' />
-    <!-- style N. 5 base -->
-    <style id='thememove-main-inline-css' type='text/css'>
+    <link rel='stylesheet' id='thememove-style-css' href='https://www.mantto.com.pe/wp-content/themes/structure/style.css' type='text/css' media='all' />    
+	<link rel='stylesheet' id='thememove-main-css' href='https://www.mantto.com.pe/wp-content/themes/structure/css/main-style.css' type='text/css' media='all' />
+    
+	<!-- style N. 5 base -->
+    <!--<style id='thememove-main-inline-css' type='text/css'>
         style_5.css
-    </style>
+    </style>-->
+	<link rel="stylesheet" id='thememove-main-inline-css' type="text/css" href="{% static 'ManttoApp/css/base/style_5.css' %}">
 	<!------------>
+	
     <link rel='stylesheet' id='vc_google_fonts_playfair_displayregularitalic700700italic900900italic-css-css' href='//fonts.googleapis.com/css?family=Playfair+Display%3Aregular%2Citalic%2C700%2C700italic%2C900%2C900italic&#038;ver=5.8.2' type='text/css'
         media='all' />
     <link rel='stylesheet' id='jquery.menu-css-css' href='https://www.mantto.com.pe/wp-content/themes/structure/js/jQuery.mmenu/css/jquery.mmenu.all.css' type='text/css' media='all' />
@@ -84,18 +102,24 @@
     <link rel='shortlink' href='https://www.mantto.com.pe/' />
     <link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.mantto.com.pe%2F" />
     <link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.mantto.com.pe%2F&#038;format=xml" />
-    <!-- style N. 6 base -->
-	<style type="text/css">
+    
+	<!-- style N. 6 base -->
+	<!--<style type="text/css">
         style_6.css
-    </style>
+    </style>-->
+	<link rel="stylesheet" type="text/css" href="{% static 'ManttoApp/css/base/style_6.css' %}">
 	<!------------->
+	
     <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress." />
     <link rel="preconnect" href="//code.tidio.co">
-    <!-- style N. 7 base -->
+    
+	<!-- style N. 7 base -->
     <style type="text/css" id="custom-background-css">
         style_7.css
     </style>
+	<link rel="stylesheet" type="text/css" id="custom-background-css" href="{% static 'ManttoApp/css/base/style_7.css' %}">
 	<!------------>
+	
     <meta name="generator" content="Powered by Slider Revolution 5.4.8 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
     <!-- script N. 2 base -->
 	<script type="text/javascript">
