@@ -160,8 +160,7 @@
     <script type="text/javascript" src="//www.mantto.com.pe/wp-content/plugins/revslider/public/assets/js/extensions/revolution.extension.parallax.min.js"></script>
 </head>
 
-{% block home_page %}{% endblock %}
-<body class="home page-template-default page page-id-70000 custom-background wp-embed-responsive tm-infinity header-preset-01 disable-title disable-breadcrumb top-area-enable full-width scheme core_1351 tm-structure-shared-by-themes24x7-com wpb-js-composer js-comp-ver-5.6 vc_responsive">
+<body class="{% if request.path == '/' %}home page-template-default page page-id-70000 custom-background wp-embed-responsive tm-infinity header-preset-01 disable-title disable-breadcrumb top-area-enable full-width scheme core_1351 tm-structure-shared-by-themes24x7-com wpb-js-composer js-comp-ver-5.6 vc_responsive{% endif %}">
     <div id="page" class="hfeed site animsition">
         <div class="header-wrapper">
             <div class="top-area">

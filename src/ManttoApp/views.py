@@ -9,6 +9,7 @@ class HomePageView(View):
 
     def get(self, request):
         #user_form = UserForm()
+        print(F'request.path == {self.request.path}')
         return render(request, 'ManttoApp/home.html', context={})
         
     # def post(self, request):
