@@ -9,13 +9,13 @@
         <link rel="pingback" href="/xmlrpc.php">
         <link rel="shortcut icon" href="/wp-content/uploads/2019/08/fav-mantto.png">
         <link rel="apple-touch-icon" href="/wp-content/uploads/2019/08/fav-mantto.png" />
-        <title>MANTTO</title>
+        {% if request.path == '/' %}<title>MANTTO</title>{% endif %}
         <meta name="robots" content="max-image-preview:large" />
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//s.w.org" />
         <link rel="alternate" type="application/rss+xml" title="MANTTO &raquo; Feed" href="/feed/" />
         <link rel="alternate" type="application/rss+xml" title="MANTTO &raquo; Feed de los comentarios" href="/comments/feed/" />
-        <link href="//db.onlinewebfonts.com/c/0e979bd4a3c1c6ac788ed57ac569667f?family=revicons" rel="stylesheet" type="text/css"/>
+        {% if request.path == '/' %}<link href="//db.onlinewebfonts.com/c/0e979bd4a3c1c6ac788ed57ac569667f?family=revicons" rel="stylesheet" type="text/css"/>{% endif %}
     
 	    <!-- style N. 1 base -->
         <!--<style>
@@ -161,7 +161,6 @@
     <body class="{% if request.path == '/' %}home page-template-default page page-id-70000 custom-background wp-embed-responsive tm-infinity header-preset-01 disable-title disable-breadcrumb top-area-enable full-width scheme core_1351 tm-structure-shared-by-themes24x7-com wpb-js-composer js-comp-ver-5.6 vc_responsive{% endif %}">
 	
 	    <div id="page" class="hfeed site animsition">
-	        <!-- base.html -->
             <div class="header-wrapper">
                 <div class="top-area">
                     <div class="container">
@@ -178,7 +177,7 @@
                     </div>
                 </div>
 			
-			    <!-- ВЕРХНЯЯ ЗАФИКСИРОВАННАЯ ЧАСТЬ -->
+			    <!-- ВЕРХНЯЯ ЗАФИКСИРОВАННАЯ ЧАСТЬ - НАЧАЛО -->
 			    <header class="header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
 			        <div class="container">
 				        <div class="row">
@@ -245,15 +244,14 @@
 					    </div>
 				    </div>
 			    </header>
-			    <!----------------------------------->
+			    <!-- ВЕРХНЯЯ ЗАФИКСИРОВАННАЯ ЧАСТЬ - КОНЕЦ --->
             </div>
-		    <!--------------->
 		
 		    <!-- КОНТЕНТ ГЛАВНОЙ СТРАНИЦЫ - НАЧАЛО -->
 			{% block main_page_content_wrapper %}{% endblock %}
 	        <!-- КОНТЕНТ ГЛАВНОЙ СТРАНИЦЫ - КОНЕЦ --->
     
-	<!-- НИЖНЯЯ ЗАФИКСИРОВАННАЯ ЧАСТЬ -->
+	<!-- НИЖНЯЯ ЗАФИКСИРОВАННАЯ ЧАСТЬ - НАЧАЛО -->
 	<div class="bottom-wrapper">
         <footer class="footer" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
             <div class="container">
@@ -322,7 +320,7 @@
             <div class="container">© MANTTO | TODOS LOS DERECHOS RESERVADOS. DISEÑO <a href="http://atdesignperu.com/" target="_blank"><span style="font-size: 9px !important; color: #636359 !important;">AT DESIGN PERÚ</span></a></div>
         </div>
     </div>
-	<!---------------------------------->
+	<!-- НИЖНЯЯ ЗАФИКСИРОВАННАЯ ЧАСТЬ - КОНЕЦ --->
 	
         </div><a class="scrollup"><i class="fa fa-angle-up"></i></a>
     <nav id="menu">
