@@ -21,6 +21,7 @@ window._wpemojiSettings = {
         var t = a.createElement("script");
         t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t)
     }
+    
     for (o = Array("flag", "emoji"), t.supports = {
         everything: !0,
         everythingExceptFlag: !0
