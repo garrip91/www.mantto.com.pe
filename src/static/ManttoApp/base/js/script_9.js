@@ -1,13 +1,16 @@
+document.tidioChatCode = "jkivxggt9xyiqm3xxnvphriovq9yicci";
 (function() {
-    function maybePrefixUrlField() {
-        if (this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
-            this.value = "http://" + this.value;
-        }
+    function asyncLoad() {
+        var tidioScript = document.createElement("script");
+        tidioScript.type = "text/javascript";
+        tidioScript.async = true;
+        tidioScript.src = "//code.tidio.co/jkivxggt9xyiqm3xxnvphriovq9yicci.js";
+        document.body.appendChild(tidioScript);
     }
-    var urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]');
-    if (urlFields) {
-        for (var j = 0; j < urlFields.length; j++) {
-            urlFields[j].addEventListener('blur', maybePrefixUrlField);
-        }
+    if (window.attachEvent) {
+        window.attachEvent("onload", asyncLoad);
+    }
+	else {
+        window.addEventListener("load", asyncLoad, false);
     }
 })();
