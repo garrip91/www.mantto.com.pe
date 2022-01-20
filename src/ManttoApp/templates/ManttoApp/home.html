@@ -3,7 +3,12 @@
 
 
 
-    
+    <!-- home style N. 1 -->
+    <!--<style type="text/css" data-type="vc_shortcodes-custom-css">
+        style_1.css
+    </style>-->
+	{% if request.path == '/' %}<link rel="stylesheet" type="text/css" data-type="vc_shortcodes-custom-css" href="{% static 'ManttoApp/home/css/style_1.css' %}">{% endif %}
+	<!--------------------->
 		
 		    <!-- КОНТЕНТ ГЛАВНОЙ СТРАНИЦЫ - НАЧАЛО -->
 			{% block main_page_content_wrapper %}
@@ -101,7 +106,7 @@
                                                             <!--<script>
                                                                 script_3.js
                                                             </script>-->
-														    <script type="text/javascript" src="{% static 'ManttoApp/js/home/script_3.js' %}"></script>
+														    <script type="text/javascript" src="{% static 'ManttoApp/home/js/script_3.js' %}"></script>
 														    <!---------------------->
 														
                                                             <div class="tp-bannertimer tp-bottom" style="height: 5px; background: rgba(0,0,0,0.15);"></div>
@@ -111,21 +116,21 @@
                                                         <!--<script>
                                                             script_4.js
                                                         </script>-->
-													    <script type="text/javascript" src="{% static 'ManttoApp/js/home/script_4.js' %}"></script>
+													    <script type="text/javascript" src="{% static 'ManttoApp/home/js/script_4.js' %}"></script>
 													    <!---------------------->
 													
 													    <!-- script N. 5 home -->
                                                         <!--<script type="text/javascript">
                                                             script_5.js
                                                         </script>-->
-													    <script type="text/javascript" src="{% static 'ManttoApp/js/home/script_5.js' %}"></script>
+													    <script type="text/javascript" src="{% static 'ManttoApp/home/js/script_5.js' %}"></script>
 													    <!---------------------->
 													
 													    <!-- script N. 6 home -->
                                                         <!--<script>
                                                             script_6.js
                                                         </script>-->
-													    <script type="text/javascript" src="{% static 'ManttoApp/js/home/script_6.js' %}"></script>
+													    <script type="text/javascript" src="{% static 'ManttoApp/home/js/script_6.js' %}"></script>
 													    <!---------------------->
 													
                                                     </div>
@@ -532,11 +537,11 @@
                                                                     <div class="vc_grid-container vc_clearfix wpb_content_element vc_basic_grid" data-initial-loading-animation="zoomIn" data-vc-grid-settings="{&quot;page_id&quot;:70000,&quot;style&quot;:&quot;all&quot;,&quot;action&quot;:&quot;vc_get_vc_grid_data&quot;,&quot;shortcode_id&quot;:&quot;{\&quot;failed_to_get_id\&quot;:\&quot;vc_gid:1571349646318-6748cb54-4438-2\&quot;}&quot;,&quot;tag&quot;:&quot;vc_basic_grid&quot;}"
                                                                         data-vc-request="https://www.mantto.com.pe/wp-admin/admin-ajax.php" data-vc-post-id="70000" data-vc-public-nonce="eb53e9b6a2">
                                                                         
-																		<!-- style N. 11 home -->
+																		<!-- home style N. 2 -->
 																		<!--<style type="text/css" data-type="vc_shortcodes-custom-css">
-                                                                            style_11.css
+                                                                            style_2.css
                                                                         </style>-->
-																		<link rel="stylesheet" type="text/css" data-type="vc_shortcodes-custom-css" href="{% static 'ManttoApp/css/home/style_11.css' %}">
+																		<link rel="stylesheet" type="text/css" data-type="vc_shortcodes-custom-css" href="{% static 'ManttoApp/home/css/style_2.css' %}">
 																		<!---------------------->
                                                                         
 																		<div class="vc_grid vc_row vc_grid-gutter-25px vc_pageable-wrapper vc_hook_hover" data-vc-pageable-content="true">
