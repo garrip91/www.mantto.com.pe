@@ -148,8 +148,8 @@
         {% if request.path == '/' %}<script type="text/javascript" src="//www.mantto.com.pe/wp-content/plugins/revslider/public/assets/js/extensions/revolution.extension.slideanims.min.js"></script>{% endif %}
         {% if request.path == '/' %}<script type="text/javascript" src="//www.mantto.com.pe/wp-content/plugins/revslider/public/assets/js/extensions/revolution.extension.layeranimation.min.js"></script>{% endif %}
         {% if request.path == '/' %}<script type="text/javascript" src="//www.mantto.com.pe/wp-content/plugins/revslider/public/assets/js/extensions/revolution.extension.kenburn.min.js"></script>{% endif %}
-        {% if request.path == '/' %}<script type="text/javascript" src="//www.mantto.com.pe/wp-content/plugins/revslider/public/assets/js/extensions/revolution.extension.navigation.min.js"></script>{% endif %}
-        {% if request.path == '/' %}<script type="text/javascript" src="//www.mantto.com.pe/wp-content/plugins/revslider/public/assets/js/extensions/revolution.extension.parallax.min.js"></script>{% endif %}
+        {% if request.path == '/' %}<script type="text/javascript" src="//www.mantto.com.pe/wp-content/plugins/revslider/public/assets/js/extensions/revolution.extension.navigation.min.js"></script>endif %}
+        {% if request.path == '/' %}<script type="text/javascript" src="//www.mantto.com.pe/wp-content/plugins/revslider/public/assets/js/extensions/revolution.extension.parallax.min.js"></script>endif %}
     
     </head>
 
@@ -241,10 +241,17 @@
 			    </header>
 			    <!-- ВЕРХНЯЯ ЗАФИКСИРОВАННАЯ ЧАСТЬ - КОНЕЦ --->
             </div>
-		
-		    <!-- КОНТЕНТ ГЛАВНОЙ СТРАНИЦЫ - НАЧАЛО -->
-			{% block main_page_content_wrapper %}{% endblock %}
-	        <!-- КОНТЕНТ ГЛАВНОЙ СТРАНИЦЫ - КОНЕЦ --->
+		    
+            {% if request.path == '/' %}
+		        <!-- КОНТЕНТ ГЛАВНОЙ СТРАНИЦЫ - НАЧАЛО -->
+			    {% block main_page_content_wrapper %}{% endblock %}
+	            <!-- КОНТЕНТ ГЛАВНОЙ СТРАНИЦЫ - КОНЕЦ --->
+            {% elif request.path == '/######/' %}
+                <!-- КОНТЕНТ СТРАНИЦЫ С УВЕДОМЛЕНИЯМИ - НАЧАЛО -->
+                {% block category_noticias_content_wrapper %}{% endblock %}
+                <!-- КОНТЕНТ СТРАНИЦЫ С УВЕДОМЛЕНИЯМИ - КОНЕЦ --->
+            {# {% ... %} #}
+            {% endif %}
     
 	<!-- НИЖНЯЯ ЗАФИКСИРОВАННАЯ ЧАСТЬ - НАЧАЛО -->
 	<div class="bottom-wrapper">

@@ -115,93 +115,8 @@
     </head>
 
     <body class="{% if request.path == '/######/' %}archive category category-noticias category-29 custom-background wp-embed-responsive tm-infinity header-preset-07 top-area-enable content-sidebar scheme core_1351 tm-structure-shared-by-themes24x7-com wpb-js-composer js-comp-ver-5.6 vc_responsive{% endif %}">
-    
-	<div id="page" class="hfeed site animsition">
-        <div class="header-wrapper">
-			<div class="top-area">
-			    <div class="container">
-				    <div class="row">
-						<div class="col-md-9 hidden-xs hidden-sm">
-							<aside id="text-7" class="widget widget_text">
-							    <div class="textwidget">
-								    <i class="fa fa-caret-right"></i><a href="http://app.mantto.com.pe/intranet/View/index.jsp" target="_blank" rel="noopener"><span style="color: #fff;">Acceder a Intranet</span></a> &nbsp; &nbsp; &nbsp; <i class="fa fa-caret-right"></i><a href="https://mail.mantto.com.pe/" target="_blank" rel="noopener"><span style="color: #fff;">Webmail</span></a>
-                                </div>
-		                    </aside>
-						</div>
-						<div class="col-md-3 col-xs-7 social"></div>
-					</div>
-			    </div>
-		    </div>
-		
-		    <header class="header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
-		        <div class="container">
-			        <div class="row">
-				        <div class="col-md-3 col-xs-6">
-					        <div class="site-branding">
-								<a href="/" rel="home">
-									<img src="https://www.mantto.com.pe/wp-content/uploads/2019/08/logo-m01.png" alt="logo"/>
-								</a>
-							</div>
-				        </div>
-						<div class="col-md-9 col-sm-6 col-xs-6 header__right">
-					        <a href="#menu">
-							    <span class="menu-link">
-								    <i class="fa fa-navicon"></i>
-								</span>
-							</a>
-					        <nav class="navigation" role="navigation">
-						        <div class="primary-menu">
-								    <ul id="primary-menu" class="menu">
-									    <li id="menu-item-75005" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75005">
-										    <a href="/nosotros/">Nosotros</a>
-										</li>
-                                        <li id="menu-item-75717" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-75717">
-										    <a href="#">Líneas de Negocio</a>
-                                            <ul class="sub-menu">
-	                                            <li id="menu-item-75814" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75814">
-												    <a href="/lineas-de-negocio-gerenciamiento-y-gestion-integral-de-proyectos/">Gestión Integral de Proyectos</a>
-												</li>
-	                                            <li id="menu-item-75826" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75826">
-												    <a href="/linea-de-negocio-construccion/">Construcción</a>
-												</li>
-	                                            <li id="menu-item-75825" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75825">
-												    <a href="/lineas-de-negocio-inmobiliaria-e-inversiones/">Inmobiliaria e Inversiones</a>
-												</li>
-                                            </ul>
-                                        </li>
-                                        <li id="menu-item-75550" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75550">
-										    <a href="/sectores/">Sectores</a>
-										</li>
-                                        <li id="menu-item-75004" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75004">
-										    <a href="/noticias/">Blog</a>
-										</li>
-                                        <li id="menu-item-76303" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-76303">
-										    <a href="#">Responsabilidad Social</a>
-                                            <ul class="sub-menu">
-	                                            <li id="menu-item-76140" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-76140">
-												    <a href="/sectores/obras/">Obras</a>
-												</li>
-	                                            <li id="menu-item-75594" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75594">
-												    <a href="/reconocimiento/">Reconocimiento</a>
-												</li>
-                                            </ul>
-                                        </li>
-                                        <li id="menu-item-75202" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75202">
-										    <a href="/certificaciones/">Certificaciones</a>
-										</li>
-                                        <li id="menu-item-74997" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-74997">
-										    <a href="/contacto/">Contacto</a>
-										</li>
-                                    </ul>
-								</div>
-							</nav>
-					        <!-- .site-navigation -->
-				        </div>
-					</div>
-		        </div>
-	        </header>
 
-</div>
+{% block category_noticias_content_wrapper %}		
 <div class="content-wrapper">
 	<div data-stellar-background-ratio="0.5" class="entry-header has-bg">
 		<div class="container">
@@ -350,6 +265,8 @@
 					</div>
 	</div>
 </div>
+{% endblock %}
+
 <div class="bottom-wrapper">
 			<footer class="footer" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
 			<div class="container">
@@ -399,7 +316,6 @@
 			</div>
 		</div>
 	</div>
-</div><!--/#page-->
 	<a class="scrollup"><i class="fa fa-angle-up"></i></a>
 <nav id="menu">
 	<div class="primary-menu"><ul id="primary-menu" class="menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75005"><a href="/nosotros/">Nosotros</a></li>
