@@ -47,16 +47,7 @@
 	    <link rel="stylesheet" id="thememove-main-inline-css" type="text/css" href="{% static 'ManttoApp/base/css/style_5.css' %}">
 	    <!--------------------->
         
-        <script type='text/javascript' src='https://www.mantto.com.pe/wp-content/plugins/essential-grid/public/assets/js/jquery.esgbox.min.js?ver=2.3' id='themepunchboxext-js'></script>
-        <script type='text/javascript' src='https://www.mantto.com.pe/wp-content/plugins/essential-grid/public/assets/js/jquery.themepunch.tools.min.js?ver=2.3' id='tp-tools-js'></script>
-        <script type='text/javascript' src='https://www.mantto.com.pe/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.8' id='revmin-js'></script>
-        <script type='text/javascript' src='https://www.mantto.com.pe/wp-content/themes/structure/js/owl.carousel.min.js?ver=5.8.2' id='thememove-js-owl-carousel-js'></script>
-        <script type='text/javascript' src='https://www.mantto.com.pe/wp-content/themes/structure/js/smoothscroll.js?ver=5.8.2' id='thememove-js-smooth-scroll-js'></script>
-        <script type='text/javascript' src='https://www.mantto.com.pe/wp-content/themes/structure/js/jquery.magnific-popup.min.js?ver=5.8.2' id='magnific-js'></script>
-        <script type='text/javascript' src='https://www.mantto.com.pe/wp-content/themes/structure/js/jquery.counterup.min.js?ver=5.8.2' id='counterup-js'></script>
-        <link rel="https://api.w.org/" href="/wp-json/" /><link rel="alternate" type="application/json" href="/wp-json/wp/v2/categories/29" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
-        <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
-        <meta name="generator" content="WordPress 5.8.2" />
+        {% if request.path == '/######/' %}<link rel="alternate" type="application/json" href="/wp-json/wp/v2/categories/29" />{% endif %}
 		
         <!-- category/noticias script N. 1 -->
 	    <!--<script type="text/javascript">
@@ -71,20 +62,14 @@
         </style>-->
 	    <link rel="stylesheet" type="text/css" href="{% static 'ManttoApp/base/css/style_6.css' %}">
 	    <!--------------------->
-        
-        <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
-        <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]-->
-        <link rel="preconnect" href="//code.tidio.co">
-        
+                
         <!-- base style N. 7 -->
         <!--<style type="text/css" id="custom-background-css">
             style_7.css
         </style>-->
 	    <link rel="stylesheet" type="text/css" id="custom-background-css" href="{% static 'ManttoApp/base/css/style_7.css' %}">
 	    <!--------------------->
-        
-        <meta name="generator" content="Powered by Slider Revolution 5.4.8 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
-        
+                
         <!-- base script N. 2 -->
 	    <!--<script type="text/javascript">
             script_2.js
@@ -118,7 +103,7 @@
         * Child Theme: Not activated
         -->
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150957217-1"></script>
+        {% if request.path == '/######/' %}<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150957217-1"></script>{% endif %}
         
         <!-- category/noticias script N. 2 -->
 	    <!--<script type="text/javascript">
@@ -129,7 +114,7 @@
 
     </head>
 
-    <body class="archive category category-noticias category-29 custom-background wp-embed-responsive tm-infinity header-preset-07 top-area-enable content-sidebar scheme core_1351 tm-structure-shared-by-themes24x7-com wpb-js-composer js-comp-ver-5.6 vc_responsive">
+    <body class="{% if request.path == '/######/' %}archive category category-noticias category-29 custom-background wp-embed-responsive tm-infinity header-preset-07 top-area-enable content-sidebar scheme core_1351 tm-structure-shared-by-themes24x7-com wpb-js-composer js-comp-ver-5.6 vc_responsive{% endif %}">
     
 	<div id="page" class="hfeed site animsition">
         <div class="header-wrapper">
