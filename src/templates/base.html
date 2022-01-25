@@ -9,13 +9,13 @@
         <link rel="pingback" href="/xmlrpc.php">
         <link rel="shortcut icon" href="/wp-content/uploads/2019/08/fav-mantto.png">
         <link rel="apple-touch-icon" href="/wp-content/uploads/2019/08/fav-mantto.png" />
-        {% if request.path == '/' %}<title>MANTTO</title>{% endif %}
+        <title>{% block title %}{% endblock %}</title>
         <meta name="robots" content="max-image-preview:large" />
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//s.w.org" />
         <link rel="alternate" type="application/rss+xml" title="MANTTO &raquo; Feed" href="/feed/" />
         <link rel="alternate" type="application/rss+xml" title="MANTTO &raquo; Feed de los comentarios" href="/comments/feed/" />
-        {% if request.path == '/' %}<link href="//db.onlinewebfonts.com/c/0e979bd4a3c1c6ac788ed57ac569667f?family=revicons" rel="stylesheet" type="text/css"/>{% endif %}
+        {% block link_href_1 %}{% endblock %}
     
 	    <!-- base style N. 1 -->
         <!--<style>
@@ -92,14 +92,14 @@
         <script type="text/javascript" src="https://www.mantto.com.pe/wp-content/themes/structure/js/jquery.magnific-popup.min.js" id="magnific-js"></script>
         <script type="text/javascript" src="https://www.mantto.com.pe/wp-content/themes/structure/js/jquery.counterup.min.js" id="counterup-js"></script>
         <link rel="https://api.w.org/" href="/wp-json/" />
-        {% if request.path == '/' %}<link rel="alternate" type="application/json" href="/wp-json/wp/v2/pages/70000" />{% endif %}
+        {% block link_href_2 %}{% endblock %}
         <link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php" />
         <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" />
         <meta name="generator" content="WordPress 5.8.2" />
-        {% if request.path == '/' %}<link rel="canonical" href="/" />{% endif %}
-        {% if request.path == '/' %}<link rel="shortlink" href="https://www.mantto.com.pe/" />{% endif %}
-        {% if request.path == '/' %}<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.mantto.com.pe%2F" />{% endif %}
-        {% if request.path == '/' %}<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.mantto.com.pe%2F&#038;format=xml" />{% endif %}
+        {% block link_href_3 %}{% endblock %}
+        {% block link_href_4 %}{% endblock %}
+        {% block link_href_5 %}{% endblock %}
+        {% block link_href_6 %}{% endblock %}
     
 	    <!-- base style N. 6 -->
 	    <!--<style type="text/css">
@@ -145,15 +145,15 @@
 	
 	    </noscript>
         
-        {% if request.path == '/' %}<script type="text/javascript" src="//www.mantto.com.pe/wp-content/plugins/revslider/public/assets/js/extensions/revolution.extension.slideanims.min.js"></script>{% endif %}
-        {% if request.path == '/' %}<script type="text/javascript" src="//www.mantto.com.pe/wp-content/plugins/revslider/public/assets/js/extensions/revolution.extension.layeranimation.min.js"></script>{% endif %}
-        {% if request.path == '/' %}<script type="text/javascript" src="//www.mantto.com.pe/wp-content/plugins/revslider/public/assets/js/extensions/revolution.extension.kenburn.min.js"></script>{% endif %}
-        {% if request.path == '/' %}<script type="text/javascript" src="//www.mantto.com.pe/wp-content/plugins/revslider/public/assets/js/extensions/revolution.extension.navigation.min.js"></script>{% endif %}
-        {% if request.path == '/' %}<script type="text/javascript" src="//www.mantto.com.pe/wp-content/plugins/revslider/public/assets/js/extensions/revolution.extension.parallax.min.js"></script>{% endif %}
+        {% block script_src_1 %}{% endblock %}
+        {% block script_src_2 %}{% endblock %}
+        {% block script_src_3 %}{% endblock %}
+        {% block script_src_4 %}{% endblock %}
+        {% block script_src_5 %}{% endblock %}
     
     </head>
 
-    <body class="{% if request.path == '/' %}home page-template-default page page-id-70000 custom-background wp-embed-responsive tm-infinity header-preset-01 disable-title disable-breadcrumb top-area-enable full-width scheme core_1351 tm-structure-shared-by-themes24x7-com wpb-js-composer js-comp-ver-5.6 vc_responsive{% endif %}">
+    <body class="{% if request.path == '/' %}home page-template-default page page-id-70000 custom-background wp-embed-responsive tm-infinity header-preset-01 disable-title disable-breadcrumb top-area-enable full-width scheme core_1351 tm-structure-shared-by-themes24x7-com wpb-js-composer js-comp-ver-5.6 vc_responsive{% elif request.path == '/category/noticias/' %}archive category category-noticias category-29 custom-background wp-embed-responsive tm-infinity header-preset-07 top-area-enable content-sidebar scheme core_1351 tm-structure-shared-by-themes24x7-com wpb-js-composer js-comp-ver-5.6 vc_responsive{% endif %}">
 	
 	    <div id="page" class="hfeed site animsition">
             <div class="header-wrapper">

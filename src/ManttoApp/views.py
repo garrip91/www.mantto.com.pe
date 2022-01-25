@@ -20,3 +20,11 @@ class HomePageView(View):
             # User.objects.create(**user_form.cleaned_data)
             # return HttpResponseRedirect('/')
         # return render(request, 'profiles/register.html', context={'user_form': user_form})
+        
+        
+class CategoryNoticiasView(View):
+
+    def get(self, request):
+        #user_form = UserForm()
+        print(F'request.path == {self.request.path}')
+        return render(request, 'ManttoApp/category/noticias/category_noticias.html', context={})
