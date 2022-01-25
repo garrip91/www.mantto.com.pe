@@ -311,8 +311,7 @@
                                     <p><input type="submit" value="Suscribir" /></p>
                                 </div>
                                 <label style="display: none !important;">Deja vacío este campo si eres humano: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off"/></label>
-                                {% if request.path == '/' %}<input type="hidden" name="_mc4wp_timestamp" value="1638460507">{% endif %}
-                                />
+                                {% block input_type_hidden_1 %}{% endblock %}
                                 <input type="hidden" name="_mc4wp_form_id" value="74641" />
                                 <input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" />
                                 <div class="mc4wp-response"></div>
