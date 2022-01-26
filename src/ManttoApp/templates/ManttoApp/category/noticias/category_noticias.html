@@ -3,12 +3,11 @@
 
 
 
-<!DOCTYPE html>
-<html lang="es">
     <head>
-	    <!-- УДАЛЁННЫЕ СТРОКИ -->
-	    {% if request.path == '/######/' %}<title>Noticias &#8211; MANTTO</title>{% endif %}
-	    {% if request.path == '/######/' %}<link rel="alternate" type="application/rss+xml" title="MANTTO &raquo; Categoría Noticias del feed" href="/category/noticias/feed/" />{% endif %}
+    
+	    {% block title %}Noticias &#8211; MANTTO{% endblock %}
+    
+        {% block category_noticias_link_href_1 %}<link rel="alternate" type="application/rss+xml" title="MANTTO &raquo; Categoría Noticias del feed" href="/category/noticias/feed/" />{% endblock %}
 	    
         <!-- base style N. 1-->
         <!--<style>
@@ -52,7 +51,7 @@
 	    <link rel="stylesheet" id="thememove-main-inline-css" type="text/css" href="{% static 'ManttoApp/base/css/style_5.css' %}">
 	    <!--------------------->
         
-        {% if request.path == '/######/' %}<link rel="alternate" type="application/json" href="/wp-json/wp/v2/categories/29" />{% endif %}
+        {% block category_noticias_link_href_2 %}<link rel="alternate" type="application/json" href="/wp-json/wp/v2/categories/29" />{% endblock %}
 		
         <!-- category/noticias script N. 1 -->
 	    <!--<script type="text/javascript">
@@ -108,7 +107,8 @@
         * Child Theme: Not activated
         -->
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        {% if request.path == '/######/' %}<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150957217-1"></script>{% endif %}
+        
+        {% block category_noticias_script_src_1 %}<script async src="https://www.googletagmanager.com/gtag/js?id=UA-150957217-1"></script>{% endblock %}
         
         <!-- category/noticias script N. 2 -->
 	    <!--<script type="text/javascript">
@@ -119,7 +119,7 @@
 
     </head>
 
-    <body class="{% if request.path == '/######/' %}archive category category-noticias category-29 custom-background wp-embed-responsive tm-infinity header-preset-07 top-area-enable content-sidebar scheme core_1351 tm-structure-shared-by-themes24x7-com wpb-js-composer js-comp-ver-5.6 vc_responsive{% endif %}">
+    
 
 {% block category_noticias_content_wrapper %}		
 <div class="content-wrapper">
@@ -322,9 +322,6 @@
 </script>-->
 <script type="text/javascript" src="{% static 'ManttoApp/base/js/script_9.js' %}"></script>
 <!----------------------->
-
-</body>
-</html>
 
 
 
