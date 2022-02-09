@@ -177,11 +177,13 @@
 	    <!--------------------->
 	
 	<meta name="generator" content="Powered by Slider Revolution 5.4.8 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
-<script type="text/javascript">function setREVStartSize(e){									
-						try{ e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
-							if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})					
-						}catch(d){console.log("Failure at Presize of Slider:"+d)}						
-					};</script>
+    
+	    <!-- base script N. 2 -->
+	    <!--<script type="text/javascript">
+            script_2.js
+        </script>-->
+	    <script type="text/javascript" src="{% static 'ManttoApp/base/js/script_2.js' %}"></script>
+	    <!---------------------->
 	
 	    <!-- base style N. 8 -->
         <!--<style type="text/css" id="wp-custom-css">
@@ -387,22 +389,16 @@
 <li id="menu-item-75465" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75465"><a href="/contacto/">Contacto</a></li>
 </ul></div></aside>					</div>
 					<div class="col-md-4">
-						<aside id="mc4wp_form_widget-2" class="widget widget_mc4wp_form_widget"><h3 class="widget-title">SUSCRIPCIÓN</h3><script>(function() {
-	window.mc4wp = window.mc4wp || {
-		listeners: [],
-		forms: {
-			on: function(evt, cb) {
-				window.mc4wp.listeners.push(
-					{
-						event   : evt,
-						callback: cb
-					}
-				);
-			}
-		}
-	}
-})();
-</script><!-- Mailchimp for WordPress v4.8.6 - https://wordpress.org/plugins/mailchimp-for-wp/ --><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-74641 mc4wp-form-theme mc4wp-form-theme-dark" method="post" data-id="74641" data-name="Formulario de Suscripción" ><div class="mc4wp-form-fields"><p>
+						<aside id="mc4wp_form_widget-2" class="widget widget_mc4wp_form_widget"><h3 class="widget-title">SUSCRIPCIÓN</h3>
+                            
+                                    <!-- base script N. 3 -->
+                                    <!--<script>
+                                        script_3.js
+                                    </script>-->
+                                    <script type="text/javascript" src="{% static 'ManttoApp/base/js/script_3.js' %}"></script>
+                                    <!---------------------->
+                                    
+<!-- Mailchimp for WordPress v4.8.6 - https://wordpress.org/plugins/mailchimp-for-wp/ --><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-74641 mc4wp-form-theme mc4wp-form-theme-dark" method="post" data-id="74641" data-name="Formulario de Suscripción" ><div class="mc4wp-form-fields"><p>
 	<input type="email" id="mc4wp_email" name="E-mail" placeholder="E-mail" required />
 </p>
 
@@ -442,70 +438,47 @@
 <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-75194 current_page_item menu-item-75202"><a href="/certificaciones/">Certificaciones</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-74997"><a href="/contacto/">Contacto</a></li>
 </ul></div></nav>
-<script type="text/javascript">
-	jQuery(document).ready(function ($) {
-		$(function() {
-			$('nav#menu').mmenu();
-		});
-	});
-</script>
-<script>(function() {function maybePrefixUrlField() {
-	if (this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
-		this.value = "http://" + this.value;
-	}
-}
-
-var urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]');
-if (urlFields) {
-	for (var j=0; j < urlFields.length; j++) {
-		urlFields[j].addEventListener('blur', maybePrefixUrlField);
-	}
-}
-})();</script>
 	
-	<script>
-		(function ($) {
-			jQuery(window).on('resize', function () {
-				if ($(window).width() >= 992) {
-					$('#page').css('padding-bottom', $('.uncover .bottom-wrapper').outerHeight());
-				}
-			});
-
-			jQuery(window).on('load', function () {
-				jQuery(window).trigger('resize');
-			});
-		})(jQuery);
-	</script>
-
-					<script>
-			jQuery(document).ready(function ($) {
-				var $window = $(window);
-				// Scroll up
-				var $scrollup = $('.scrollup');
-
-				$window.scroll(function () {
-					if ($window.scrollTop() > 100) {
-						$scrollup.addClass('show');
-					} else {
-						$scrollup.removeClass('show');
-					}
-				});
-
-				$scrollup.on('click', function (evt) {
-					$("html, body").animate({scrollTop: 0}, 600);
-					evt.preventDefault();
-				});
-			});
-		</script>
+        <!-- base script N. 4 -->
+        <!--<script type="text/javascript">
+            script_4.js
+        </script>-->
+        <script type="text/javascript" src="{% static 'ManttoApp/base/js/script_4.js' %}"></script>
+        <!---------------------->
+    
+        <!-- base script N. 5 -->
+        <!--<script>
+            script_5.js
+        </script>-->
+        <script type="text/javascript" src="{% static 'ManttoApp/base/js/script_5.js' %}"></script>
+        <!---------------------->
+	
+        <!-- base script N. 6 -->
+        <!--<script>
+            script_6.js
+        </script>-->
+        <script type="text/javascript" src="{% static 'ManttoApp/base/js/script_6.js' %}"></script>
+        <!----------------------->
+	
+        <!-- base script N. 7 -->
+        <!--<script>
+            script_7.js
+        </script>-->
+        <script type="text/javascript" src="{% static 'ManttoApp/base/js/script_7.js' %}"></script>
+        <!----------------------->
+	
 			<link rel='stylesheet' id='prettyphoto-css'  href='https://www.mantto.com.pe/wp-content/plugins/js_composer/assets/lib/prettyphoto/css/prettyPhoto.min.css?ver=5.6' type='text/css' media='all' />
 <link rel='stylesheet' id='animate-css-css'  href='https://www.mantto.com.pe/wp-content/plugins/js_composer/assets/lib/bower/animate-css/animate.min.css?ver=5.6' type='text/css' media='all' />
 <script type='text/javascript' src='https://www.mantto.com.pe/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7' id='regenerator-runtime-js'></script>
 <script type='text/javascript' src='https://www.mantto.com.pe/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0' id='wp-polyfill-js'></script>
-<script type='text/javascript' id='contact-form-7-js-extra'>
-/* <![CDATA[ */
-var wpcf7 = {"api":{"root":"https:\/\/www.mantto.com.pe\/wp-json\/","namespace":"contact-form-7\/v1"}};
-/* ]]> */
-</script>
+    
+        <!-- base script N. 8 -->
+        <!--<script type="text/javascript" id="contact-form-7-js-extra">
+            script_8.js
+        </script>-->
+        <script type="text/javascript" id="contact-form-7-js-extra" src="{% static 'ManttoApp/base/js/script_8.js' %}"></script>
+        <!----------------------->
+	
 <script type='text/javascript' src='https://www.mantto.com.pe/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.5.2' id='contact-form-7-js'></script>
 <script type='text/javascript' src='https://www.mantto.com.pe/wp-content/themes/structure/js/jquery.stellar.min.js' id='thememove-js-stellar-js'></script>
 <script type='text/javascript' src='https://www.mantto.com.pe/wp-content/themes/structure/js/jquery.matchHeight.js' id='matchHeight-js'></script>
@@ -516,21 +489,13 @@ var wpcf7 = {"api":{"root":"https:\/\/www.mantto.com.pe\/wp-json\/","namespace":
 <script type='text/javascript' src='https://www.mantto.com.pe/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=5.6' id='wpb_composer_front_js-js'></script>
 <script type='text/javascript' src='https://www.mantto.com.pe/wp-content/plugins/js_composer/assets/lib/prettyphoto/js/jquery.prettyPhoto.min.js?ver=5.6' id='prettyphoto-js'></script>
 <script type='text/javascript' defer src='https://www.mantto.com.pe/wp-content/plugins/mailchimp-for-wp/assets/js/forms.js?ver=4.8.6' id='mc4wp-forms-api-js'></script>
-<script type='text/javascript'>
-document.tidioChatCode = "jkivxggt9xyiqm3xxnvphriovq9yicci";
-(function() {
-  function asyncLoad() {
-    var tidioScript = document.createElement("script");
-    tidioScript.type = "text/javascript";
-    tidioScript.async = true;
-    tidioScript.src = "//code.tidio.co/jkivxggt9xyiqm3xxnvphriovq9yicci.js";
-    document.body.appendChild(tidioScript);
-  }
-  if (window.attachEvent) {
-    window.attachEvent("onload", asyncLoad);
-  } else {
-    window.addEventListener("load", asyncLoad, false);
-  }
-})();
-</script></body>
+	
+        <!-- base script N. 9 -->
+        <!--<script type="text/javascript">
+            script_9.js
+        </script>-->
+        <script type="text/javascript" src="{% static 'ManttoApp/base/js/script_9.js' %}"></script>
+        <!----------------------->
+	
+</body>
 </html>
