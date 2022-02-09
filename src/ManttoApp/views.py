@@ -35,4 +35,4 @@ class CertificacionesCertificacionesView(View):
     def get(self, request):
         #user_form = UserForm()
         print(F'request.path == {self.request.path}')
-        return render(request, 'ManttoApp/certificaciones/certificaciones/certificaciones.html', context={})
+        return render(request, 'ManttoApp/certificaciones/certificaciones.html', context={})
