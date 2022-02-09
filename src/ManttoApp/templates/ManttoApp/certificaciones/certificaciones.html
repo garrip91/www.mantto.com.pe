@@ -61,8 +61,8 @@
 	    <!--<script type="text/javascript">
             script_1.js
         </script>-->
-	    <script type="text/javascript" src="{% static 'ManttoApp/certificaciones/js/script_1.js' %}"></script>
-	    <!---------------------->
+	    {% block certificaciones_certificaciones_INTERNAL_script_src_1 %}<script type="text/javascript" src="{% static 'ManttoApp/certificaciones/js/script_1.js' %}"></script>{% endblock %}
+	   <!--------------------------------->
 	
 	    <!-- base style N. 6 -->
 	    <!--<style type="text/css">
@@ -70,9 +70,6 @@
         </style>-->
 	    <link rel="stylesheet" type="text/css" href="{% static 'ManttoApp/base/css/style_6.css' %}">
 	    <!--------------------->
-	
-<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
-<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><link rel="preconnect" href="//code.tidio.co">
     
 	    <!-- base style N. 7 -->
         <!--<style type="text/css" id="custom-background-css">
@@ -80,8 +77,6 @@
         </style>-->
 	    <link rel="stylesheet" type="text/css" id="custom-background-css" href="{% static 'ManttoApp/base/css/style_7.css' %}">
 	    <!--------------------->
-	
-	<meta name="generator" content="Powered by Slider Revolution 5.4.8 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
     
 	    <!-- base script N. 2 -->
 	    <!--<script type="text/javascript">
@@ -97,7 +92,12 @@
 	    <link rel="stylesheet" type="text/css" id="wp-custom-css" href="{% static 'ManttoApp/base/css/style_8.css' %}">
 	    <!--------------------->
 
-		<style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1564809297991{margin-bottom: 0px !important;background-color: #ececec !important;}</style>
+        <!-- certificaciones style N. 1 -->
+	    <!--<script type="text/css" data-type="vc_shortcodes-custom-css">
+            script_1.js
+        </script>-->
+		{% block certificaciones_certificaciones_INTERNAL_link_href_1 %}<link rel="stylesheet" type="text/css" data-type="vc_shortcodes-custom-css" href="{% static 'ManttoApp/certificaciones/css/style_1.css' %}">{% endblock %}
+        <!-------------------------------->
     
 	    <noscript>
 	
