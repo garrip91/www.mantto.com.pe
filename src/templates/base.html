@@ -180,7 +180,7 @@
     
     </head>
 
-    <body class="{% if request.path == '/' %}home page-template-default page page-id-70000 custom-background wp-embed-responsive tm-infinity header-preset-01 disable-title disable-breadcrumb top-area-enable full-width scheme core_1351 tm-structure-shared-by-themes24x7-com wpb-js-composer js-comp-ver-5.6 vc_responsive{% elif request.path == '/category/noticias/' %}archive category category-noticias category-29 custom-background wp-embed-responsive tm-infinity header-preset-07 top-area-enable content-sidebar scheme core_1351 tm-structure-shared-by-themes24x7-com wpb-js-composer js-comp-ver-5.6 vc_responsive{% endif %}">
+    <body class="{% if request.path == '/' %}home page-template-default page page-id-70000 custom-background wp-embed-responsive tm-infinity header-preset-01 disable-title disable-breadcrumb top-area-enable full-width scheme core_1351 tm-structure-shared-by-themes24x7-com wpb-js-composer js-comp-ver-5.6 vc_responsive{% elif request.path == '/category/noticias/' %}archive category category-noticias category-29 custom-background wp-embed-responsive tm-infinity header-preset-07 top-area-enable content-sidebar scheme core_1351 tm-structure-shared-by-themes24x7-com wpb-js-composer js-comp-ver-5.6 vc_responsive{% elif request.path == '/certificaciones/' %}page-template-default page page-id-75194 custom-background wp-embed-responsive tm-infinity header-preset-07 top-area-enable full-width scheme core_1351 tm-structure-shared-by-themes24x7-com wpb-js-composer js-comp-ver-5.6 vc_responsive{% endif %}">
 	
 	    <div id="page" class="hfeed site animsition">
             <div class="header-wrapper">
@@ -279,7 +279,9 @@
                 {% block category_noticias_content_wrapper %}{% endblock %}
                 <!-- КОНТЕНТ СТРАНИЦЫ С УВЕДОМЛЕНИЯМИ - КОНЕЦ --->
             {% elif request.path == '/certificaciones/certificaciones/' %}
+                <!-- КОНТЕНТ СТРАНИЦЫ С СЕРТИФИКАТАМИ - НАЧАЛО -->
                 {% block certificaciones_content_wrapper %}{% endblock %}
+                <!-- КОНТЕНТ СТРАНИЦЫ С СЕРТИФИКАТАМИ - КОНЕЦ --->
             {# {% ... %} #}
             {% endif %}
     

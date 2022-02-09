@@ -30,7 +30,6 @@
 
 
 
-<body class="page-template-default page page-id-75194 custom-background wp-embed-responsive tm-infinity header-preset-07 top-area-enable full-width scheme core_1351 tm-structure-shared-by-themes24x7-com wpb-js-composer js-comp-ver-5.6 vc_responsive">
 <div id="page" class="hfeed site animsition">
 <div class="header-wrapper">
 			<div class="top-area">
@@ -87,7 +86,10 @@
 	</header>
 
 </div>
-	<div class="content-wrapper">
+	
+    
+{% block certificaciones_content_wrapper %}
+    <div class="content-wrapper">
 		<main class="content" role="main">
 							<article id="post-75194" class="post-75194 page type-page status-publish hentry" itemscope="itemscope"
 				         itemtype="http://schema.org/CreativeWork">
@@ -170,6 +172,7 @@
 									</div>
 					</main>
 	</div>
+{% endblock %}
 
 <div class="bottom-wrapper">
 			<footer class="footer" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
@@ -300,5 +303,3 @@
         </script>-->
         <script type="text/javascript" src="{% static 'ManttoApp/base/js/script_9.js' %}"></script>
         <!----------------------->
-	
-</body>
