@@ -30,7 +30,7 @@ class CategoryNoticiasView(View):
         return render(request, 'ManttoApp/category/noticias/category_noticias.html', context={})
         
         
-class CertificacionesCertificacionesView(View):
+class CertificacionesView(View):
 
     def get(self, request):
         #user_form = UserForm()
