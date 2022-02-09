@@ -28,3 +28,11 @@ class CategoryNoticiasView(View):
         #user_form = UserForm()
         print(F'request.path == {self.request.path}')
         return render(request, 'ManttoApp/category/noticias/category_noticias.html', context={})
+        
+        
+class CertificacionesCertificacionesView(View):
+
+    def get(self, request):
+        #user_form = UserForm()
+        print(F'request.path == {self.request.path}')
+        return render(request, 'ManttoApp/certificaciones/certificaciones/certificaciones.html', context={})
