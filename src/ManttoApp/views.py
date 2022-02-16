@@ -40,4 +40,7 @@ class CertificacionesView(View):
         
 class ContactoView(View):
 
-    pass
+    def get(self, request):
+        #user_form = UserForm()
+        print(F'request.path == {self.request.path}')
+        return render(request, 'ManttoApp/contacto/contacto.html', context={})
