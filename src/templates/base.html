@@ -266,7 +266,7 @@
 										    <li id="menu-item-75202" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75202">
 										        <a href="/certificaciones/">Certificaciones</a>
 										    </li>
-										    <li id="menu-item-74997" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-74997">
+										    <li id="menu-item-74997" class="{% if request.path == '/contacto/' %}menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-67 current_page_item menu-item-74997{# {% elif request.path == '/######/' %} #}{% else %}menu-item menu-item-type-post_type menu-item-object-page menu-item-74997{% endif %}">
 										        <a href="/contacto/">Contacto</a>
 										    </li>
 									    </ul>
