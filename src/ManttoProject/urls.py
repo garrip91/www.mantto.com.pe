@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from ManttoApp.views import HomePageView, CategoryNoticiasView, CertificacionesView, ContactoView
+from ManttoApp.views import HomePageView, CategoryNoticiasView, CertificacionesView, ContactoView, CategoryNoticiasLaprimeraetapadelcondominiokentiafueentregadaeneltiempoestimadoView
 
 from django.conf.urls.static import static
 from django.conf import settings
@@ -24,10 +24,11 @@ from django.conf import settings
 
 
 urlpatterns = [
-    path('', HomePageView.as_view(), name='home_page'),
-    path('category/noticias/', CategoryNoticiasView.as_view(), name='category_noticias'),
-    path('certificaciones/', CertificacionesView.as_view(), name='certificaciones'),
-    path('contacto/', ContactoView.as_view(), name='contacto'),
+    path('', HomePageView.as_view(), name='home_page'), # MANTTO
+    path('category/noticias/', CategoryNoticiasView.as_view(), name='category_noticias'), # BLOG
+    path('category/noticias/laprimeraetapadelcondominiokentiafueentregadaeneltiempoestimado/', CategoryNoticiasLaprimeraetapadelcondominiokentiafueentregadaeneltiempoestimadoView.as_view(), name='category_noticias_laprimeraetapadelcondominiokentiafueentregadaeneltiempoestimado'), # BLOG/La primera etapa del Condominio Kentia fue finalizada y entregada en el plazo estimado
+    path('certificaciones/', CertificacionesView.as_view(), name='certificaciones'), # CERTIFICACIONES
+    path('contacto/', ContactoView.as_view(), name='contacto'), # CONTACTO
     path('admin/', admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
