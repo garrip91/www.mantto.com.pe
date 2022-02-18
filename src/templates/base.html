@@ -198,7 +198,7 @@
     
     </head>
 
-    <body class="{% if request.path == '/' %}home page-template-default page page-id-70000 custom-background wp-embed-responsive tm-infinity header-preset-01 disable-title disable-breadcrumb top-area-enable full-width scheme core_1351 tm-structure-shared-by-themes24x7-com wpb-js-composer js-comp-ver-5.6 vc_responsive{% elif request.path == '/category/noticias/' %}archive category category-noticias category-29 custom-background wp-embed-responsive tm-infinity header-preset-07 top-area-enable content-sidebar scheme core_1351 tm-structure-shared-by-themes24x7-com wpb-js-composer js-comp-ver-5.6 vc_responsive{% elif request.path == '/certificaciones/' %}page-template-default page page-id-75194 custom-background wp-embed-responsive tm-infinity header-preset-07 top-area-enable full-width scheme core_1351 tm-structure-shared-by-themes24x7-com wpb-js-composer js-comp-ver-5.6 vc_responsive{% elif request.path == '/contacto/' %}page-template-default page page-id-67 custom-background wp-embed-responsive tm-infinity header-preset-07 top-area-enable full-width scheme core_1351 tm-structure-shared-by-themes24x7-com wpb-js-composer js-comp-ver-5.6 vc_responsive{% endif %}">
+    <body class="{% if request.path == '/' %}home page-template-default page page-id-70000 custom-background wp-embed-responsive tm-infinity header-preset-01 disable-title disable-breadcrumb top-area-enable full-width scheme core_1351 tm-structure-shared-by-themes24x7-com wpb-js-composer js-comp-ver-5.6 vc_responsive{% elif request.path == '/category/noticias/' %}archive category category-noticias category-29 custom-background wp-embed-responsive tm-infinity header-preset-07 top-area-enable content-sidebar scheme core_1351 tm-structure-shared-by-themes24x7-com wpb-js-composer js-comp-ver-5.6 vc_responsive{% elif request.path == '/certificaciones/' %}page-template-default page page-id-75194 custom-background wp-embed-responsive tm-infinity header-preset-07 top-area-enable full-width scheme core_1351 tm-structure-shared-by-themes24x7-com wpb-js-composer js-comp-ver-5.6 vc_responsive{% elif request.path == '/contacto/' %}page-template-default page page-id-67 custom-background wp-embed-responsive tm-infinity header-preset-07 top-area-enable full-width scheme core_1351 tm-structure-shared-by-themes24x7-com wpb-js-composer js-comp-ver-5.6 vc_responsive{% elif request.path == '/category/noticias/laprimeraetapadelcondominiokentiafueentregadaeneltiempoestimado/' %}post-template-default single single-post postid-76437 single-format-video custom-background wp-embed-responsive tm-infinity header-preset-07 top-area-enable content-sidebar scheme core_1351 tm-structure-shared-by-themes24x7-com wpb-js-composer js-comp-ver-5.6 vc_responsive{% endif %}">
 	
 	    <div id="page" class="hfeed site animsition">
             <div class="header-wrapper">
@@ -268,7 +268,7 @@
 												        <a href="/sectores/obras/">Obras</a>
 												    </li>
 												    <li id="menu-item-75594" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-75594">
-												        <a href="/reconocimiento/">Reconocimiento</a>
+                                                        <a href="/reconocimiento/">Reconocimiento</a>
 												    </li>
 											    </ul>
 										    </li>
@@ -304,6 +304,10 @@
                 <!-- КОНТЕНТ СТРАНИЦЫ КОНТАКТОВ - НАЧАЛО -->
                 {% block contacto_content_wrapper %}{% endblock %}
                 <!-- КОНТЕНТ СТРАНИЦЫ КОНТАКТОВ - КОНЕЦ --->
+            {% elif request.path == '/category/noticias/laprimeraetapadelcondominiokentiafueentregadaeneltiempoestimado/' %}
+                <!-- КОНТЕНТ СТРАНИЦЫ "Kentia Condominium" - НАЧАЛО -->
+                {% block laprimeraetapadelcondominiokentiafueentregadaeneltiempoestimado_content_wrapper %}{% endblock %}
+                <!-- КОНТЕНТ СТРАНИЦЫ "Kentia Condominium" - КОНЕЦ --->
             {# {% ... %} #}
             {% endif %}
     
@@ -392,6 +396,7 @@
                                         </div>
                                         <label style="display: none !important;">Deja vacío este campo si eres humano: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></label>
                                         {% block home_input_type_hidden_1 %}{% endblock %}
+                                        {% block laprimeraetapadelcondominiokentiafueentregadaeneltiempoestimado_input_type_hidden_1 %}{% endblock %}
                                         <input type="hidden" name="_mc4wp_form_id" value="74641" />
                                         <input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" />
                                         <div class="mc4wp-response"></div>
@@ -546,7 +551,7 @@
         <script type="text/javascript" src="https://www.mantto.com.pe/wp-content/plugins/js_composer/assets/lib/bower/imagesloaded/imagesloaded.pkgd.min.js" id="vc_grid-js-imagesloaded-js"></script>
         <script type="text/javascript" src="https://www.mantto.com.pe/wp-includes/js/underscore.min.js?ver=1.13.1" id="underscore-js"></script>
         <script type="text/javascript" src="https://www.mantto.com.pe/wp-content/plugins/js_composer/assets/js/dist/vc_grid.min.js" id="vc_grid-js"></script>
-        <script type="text/javascript" defer src="https://www.mantto.com.pe/wp-content/plugins/mailchimp-for-wp/assets/js/forms.js" id="mc4wp-forms-api-js"></script>
+        <script type="text/javascript" defer src="https://www.mantto.com.pe/wp-content/plugins/mailchimp-for-wp/assets/js/forms.js?ver=4.8.6" id="mc4wp-forms-api-js"></script>
     
         <!-- home script N. 8 -->
         <!--<script type="application/ld+json">
@@ -554,6 +559,8 @@
         </script>-->
         {#<script type="application/ld+json" src="{% static 'ManttoApp/home/js/script_8.js' %}"></script>#}
         <!---------------------->
+        
+        {% block laprimeraetapadelcondominiokentiafueentregadaeneltiempoestimado_EXTERNAL_script_src_2 %}{% endblock %}
 	
         <!-- base script N. 9 -->
         <!--<script type="text/javascript">

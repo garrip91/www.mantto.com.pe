@@ -4,3 +4,11 @@ link rel="stylesheet" id="carousel-slider-frontend-css" из base.html отсу�
 link rel="EditURI" отсутствует в contacto.html
 
 link rel="stylesheet" id="carousel-slider-frontend-css" из base.html отсутствует в laprimeraetapadelcondominiokentiafueentregadaeneltiempoestimado.html
+id="carousel-slider-frontend-js" из base.html отсутствует в laprimeraetapadelcondominiokentiafueentregadaeneltiempoestimado.html
+id="prettyphoto-js" из base.html отсутствует в laprimeraetapadelcondominiokentiafueentregadaeneltiempoestimado.html
+<link rel="stylesheet" id="animate-css-css"
+<link rel="stylesheet" id="prettyphoto-css"
+<link rel="stylesheet" id="mediaelement-css"
+<link rel="stylesheet" id="wp-mediaelement-css"
+<link rel="stylesheet" id="vc_pageable_owl-carousel-css-css"
+								/ отсутствуют в laprimeraetapadelcondominiokentiafueentregadaeneltiempoestimado.html
