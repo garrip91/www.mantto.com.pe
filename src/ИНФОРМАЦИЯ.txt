@@ -1,3 +1,6 @@
 base/script1.js отсутствует в certificaciones.html
+
 link rel="stylesheet" id="carousel-slider-frontend-css" из base.html отсутствует в contacto.html
 link rel="EditURI" отсутствует в contacto.html
+
+link rel="stylesheet" id="carousel-slider-frontend-css" из base.html отсутствует в laprimeraetapadelcondominiokentiafueentregadaeneltiempoestimado.html
