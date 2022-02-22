@@ -52,3 +52,11 @@ class CategoryNoticiasLaprimeraetapadelcondominiokentiafueentregadaeneltiempoest
         #user_form = UserForm()
         print(F'request.path == {self.request.path}')
         return render(request, 'ManttoApp/category/noticias/laprimeraetapadelcondominiokentiafueentregadaeneltiempoestimado/laprimeraetapadelcondominiokentiafueentregadaeneltiempoestimado.html', context={})
+        
+        
+class LineaDeNegocioConstruccionView(View):
+
+    def get(self, request):
+        #user_form = UserForm()
+        print(F'request.path == {self.request.path}')
+        return render(request, 'ManttoApp/linea_de_negocio_construccion/linea_de_negocio_construccion.html', context={})

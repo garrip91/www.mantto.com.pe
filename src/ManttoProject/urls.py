@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from ManttoApp.views import HomePageView, CategoryNoticiasView, CertificacionesView, ContactoView, CategoryNoticiasLaprimeraetapadelcondominiokentiafueentregadaeneltiempoestimadoView
+from ManttoApp.views import HomePageView, CategoryNoticiasView, CertificacionesView, ContactoView, CategoryNoticiasLaprimeraetapadelcondominiokentiafueentregadaeneltiempoestimadoView, LineaDeNegocioConstruccionView
 
 from django.conf.urls.static import static
 from django.conf import settings
@@ -29,6 +29,7 @@ urlpatterns = [
     path('category/noticias/laprimeraetapadelcondominiokentiafueentregadaeneltiempoestimado/', CategoryNoticiasLaprimeraetapadelcondominiokentiafueentregadaeneltiempoestimadoView.as_view(), name='category_noticias_laprimeraetapadelcondominiokentiafueentregadaeneltiempoestimado'), # BLOG/La primera etapa del Condominio Kentia fue finalizada y entregada en el plazo estimado
     path('certificaciones/', CertificacionesView.as_view(), name='certificaciones'), # CERTIFICACIONES
     path('contacto/', ContactoView.as_view(), name='contacto'), # CONTACTO
+    path('linea_de_negocio_construccion/', LineaDeNegocioConstruccionView.as_view(), name='linea_de_negocio_construccion'), # LINEAS DE NEGOCIO/CONSTRUCCION
     path('admin/', admin.site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
