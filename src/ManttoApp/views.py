@@ -35,7 +35,7 @@ class CertificacionesView(View):
     def get(self, request):
         #user_form = UserForm()
         print(F'request.path == {self.request.path}')
-        return render(request, 'ManttoApp/certificaciones/certificaciones.html', context={})
+        return render(request, 'ManttoApp/certificaciones.html', context={})
         
         
 class ContactoView(View):
@@ -43,7 +43,7 @@ class ContactoView(View):
     def get(self, request):
         #user_form = UserForm()
         print(F'request.path == {self.request.path}')
-        return render(request, 'ManttoApp/contacto/contacto.html', context={})
+        return render(request, 'ManttoApp/contacto.html', context={})
         
       
 class CategoryNoticiasLaprimeraetapadelcondominiokentiafueentregadaeneltiempoestimadoView(View):
@@ -59,4 +59,4 @@ class LineaDeNegocioConstruccionView(View):
     def get(self, request):
         #user_form = UserForm()
         print(F'request.path == {self.request.path}')
-        return render(request, 'ManttoApp/linea_de_negocio_construccion/linea_de_negocio_construccion.html', context={})
+        return render(request, 'ManttoApp/linea_de_negocio_construccion.html', context={})
