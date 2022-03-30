@@ -47,13 +47,31 @@
 	    <!--------------------->
 	
         <link rel="stylesheet" id="wp-block-library-css" href="https://www.mantto.com.pe/wp-includes/css/dist/block-library/style.min.css?ver=5.8.2" type="text/css" media="all" />
-    
-	    <!-- base style N. 3 -->
-	    <!--<style id="wp-block-library-theme-inline-css" type="text/css">
-            style_3.css
-        </style>-->
-	    <link rel="stylesheet" id="wp-block-library-theme-inline-css" type="text/css" href="{% static 'ManttoApp/base/css/style_3.css' %}" />
-	    <!--------------------->
+        
+        {% if request.path == '/linea_de_negocio_construccion/' %}
+            <!-- linea_de_negocio_construccion style N. 1 -->
+            <!--<style id="wp-block-library-theme-inline-css" type="text/css">
+                style_1.css
+            </style>-->
+            <link rel="stylesheet" id="wp-block-library-theme-inline-css" type="text/css" href="{% static 'ManttoApp/linea_de_negocio_construccion/css/style_1.css' %}" />
+            <!--------------------->
+        {% else %}
+            <!-- base style N. 3 -->
+            <!--<style id="wp-block-library-theme-inline-css" type="text/css">
+                style_3.css
+            </style>-->
+            <link rel="stylesheet" id="wp-block-library-theme-inline-css" type="text/css" href="{% static 'ManttoApp/base/css/style_3.css' %}" />
+            <!--------------------->
+        {% endif %}
+
+        {% if request.path == '/linea_de_negocio_construccion/' %}
+            <!-- linea_de_negocio_construccion style N. 2 -->
+            <!--<style id="global-styles-inline-css" type="text/css">
+                style_2.css
+            </style>-->
+            <link rel="stylesheet" id="global-styles-inline-css" type="text/css" href="{% static 'ManttoApp/linea_de_negocio_construccion/css/style_2.css' %}" />
+            <!--------------------->
+        {% endif %}
 	
         <link rel="stylesheet" id="contact-form-7-css" href="https://www.mantto.com.pe/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.5.2" type="text/css" media="all" />
         <link rel="stylesheet" id="essential-grid-plugin-settings-css" href="https://www.mantto.com.pe/wp-content/plugins/essential-grid/public/assets/css/settings.css?ver=2.3" type="text/css" media="all" />
@@ -138,6 +156,8 @@
         {% block linea_de_negocio_construccion_EXTERNAL_link_href_3 %}{% endblock %}
         {% block linea_de_negocio_construccion_EXTERNAL_link_href_4 %}{% endblock %}
         {% block linea_de_negocio_construccion_EXTERNAL_link_href_5 %}{% endblock %}
+        
+        {% block linea_de_negocio_construccion_INTERNAL_script_src_1 %}{% endblock %}
     
 	    <!-- base style N. 6 -->
 	    <!--<style type="text/css">
@@ -200,6 +220,8 @@
         {% block contacto_INTERNAL_script_src_2 %}{% endblock %}
         {% block laprimeraetapadelcondominiokentiafueentregadaeneltiempoestimado_EXTERNAL_script_src_1 %}{% endblock %}
         {% block laprimeraetapadelcondominiokentiafueentregadaeneltiempoestimado_INTERNAL_script_src_2 %}{% endblock %}
+        
+        {% block linea_de_negocio_construccion_INTERNAL_script_src_2 %}{% endblock %}
     
     </head>
 
