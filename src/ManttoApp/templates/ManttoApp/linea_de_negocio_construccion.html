@@ -3,21 +3,10 @@
 
 
 
-<!DOCTYPE html>
-<html lang="es">
+{% block title %}Construcción &#8211; MANTTO{% endblock %}
+{% block linea_de_negocio_construccion_EXTERNAL_link_href_1 %}<link rel="stylesheet" id="font-awesome-css" href="https://www.mantto.com.pe/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/font-awesome.min.css?ver=5.6" type="text/css" media="all" />{% endblock %}
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="pingback" href="http://www.mantto.com.pe/xmlrpc.php">
-	<link rel="shortcut icon" href="https://www.mantto.com.pe/wp-content/uploads/2019/08/fav-mantto.png">
-	<link rel="apple-touch-icon" href="https://www.mantto.com.pe/wp-content/uploads/2019/08/fav-mantto.png"/>
-	<title>Construcción &#8211; MANTTO</title>
-<meta name='robots' content='max-image-preview:large' />
-<link rel='dns-prefetch' href='//fonts.googleapis.com' />
-<link rel='dns-prefetch' href='//s.w.org' />
-<link rel="alternate" type="application/rss+xml" title="MANTTO &raquo; Feed" href="https://www.mantto.com.pe/feed/" />
-<link rel="alternate" type="application/rss+xml" title="MANTTO &raquo; Feed de los comentarios" href="https://www.mantto.com.pe/comments/feed/" />
 	
 	    <!-- base script N. 1 -->
         <!--<script type="text/javascript">
@@ -32,8 +21,6 @@
         </style>-->
 	    <link rel="stylesheet" type="text/css" href="{% static 'ManttoApp/base/css/style_2.css' %}" />
 	    <!--------------------->
-
-	<link rel='stylesheet' id='wp-block-library-css'  href='http://www.mantto.com.pe/wp-includes/css/dist/block-library/style.min.css?ver=5.9' type='text/css' media='all' />
 
         {% if request.path == '/linea_de_negocio_construccion/' %}
             <!-- linea_de_negocio_construccion style N. 1 -->
@@ -59,17 +46,6 @@
             <link rel="stylesheet" id="global-styles-inline-css" type="text/css" href="{% static 'ManttoApp/linea_de_negocio_construccion/css/style_2.css' %}" />
             <!--------------------->
         {% endif %}
-	
-<link rel='stylesheet' id='contact-form-7-css'  href='http://www.mantto.com.pe/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.5.4' type='text/css' media='all' />
-<link rel='stylesheet' id='essential-grid-plugin-settings-css'  href='http://www.mantto.com.pe/wp-content/plugins/essential-grid/public/assets/css/settings.css?ver=2.3' type='text/css' media='all' />
-<link rel='stylesheet' id='tp-open-sans-css'  href='http://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800&#038;ver=5.9' type='text/css' media='all' />
-<link rel='stylesheet' id='tp-raleway-css'  href='http://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900&#038;ver=5.9' type='text/css' media='all' />
-<link rel='stylesheet' id='tp-droid-serif-css'  href='http://fonts.googleapis.com/css?family=Droid+Serif%3A400%2C700&#038;ver=5.9' type='text/css' media='all' />
-<link rel='stylesheet' id='tp-lato-css'  href='http://fonts.googleapis.com/css?family=Lato%3A300%2C400%2C700%2C900&#038;ver=5.9' type='text/css' media='all' />
-<link rel='stylesheet' id='tp-montserrat-css'  href='http://fonts.googleapis.com/css?family=Montserrat%3A400%2C700&#038;ver=5.9' type='text/css' media='all' />
-<link rel='stylesheet' id='tp-karla-css'  href='http://fonts.googleapis.com/css?family=Karla%3A400%2C700&#038;ver=5.9' type='text/css' media='all' />
-<link rel='stylesheet' id='tp-fontello-css'  href='http://www.mantto.com.pe/wp-content/plugins/essential-grid/public/assets/font/fontello/css/fontello.css?ver=2.3' type='text/css' media='all' />
-<link rel='stylesheet' id='rs-plugin-settings-css'  href='http://www.mantto.com.pe/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.4.8' type='text/css' media='all' />
 
 	    <!-- base style N. 4 -->
         <!--<style id="rs-plugin-settings-inline-css" type="text/css">
@@ -78,11 +54,6 @@
 	    <link rel="stylesheet" id="rs-plugin-settings-inline-css" type="text/css" href="{% static 'ManttoApp/base/css/style_4.css' %}" />
 	    <!--------------------->
 
-<link rel='stylesheet' id='wp-job-manager-job-listings-css'  href='http://www.mantto.com.pe/wp-content/plugins/wp-job-manager/assets/dist/css/job-listings.css?ver=d866e43503c5e047c6b0be0a9557cf8e' type='text/css' media='all' />
-<link rel='stylesheet' id='mc4wp-form-themes-css'  href='http://www.mantto.com.pe/wp-content/plugins/mailchimp-for-wp/assets/css/form-themes.css?ver=4.8.6' type='text/css' media='all' />
-<link rel='stylesheet' id='thememove-style-css'  href='http://www.mantto.com.pe/wp-content/themes/structure/style.css?ver=5.9' type='text/css' media='all' />
-<link rel='stylesheet' id='thememove-main-css'  href='http://www.mantto.com.pe/wp-content/themes/structure/css/main-style.css?ver=5.9' type='text/css' media='all' />
-
 	    <!-- base style N. 5 -->
         <!--<style id="thememove-main-inline-css" type="text/css">
             style_5.css
@@ -90,7 +61,8 @@
 	    <link rel="stylesheet" id="thememove-main-inline-css" type="text/css" href="{% static 'ManttoApp/base/css/style_5.css' %}" />
 	    <!--------------------->
 
-<link rel='stylesheet' id='font-awesome-css'  href='http://www.mantto.com.pe/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/font-awesome.min.css?ver=5.6' type='text/css' media='all' />
+
+
 <link rel='stylesheet' id='vc_google_fonts_playfair_displayregularitalic700700italic900900italic-css-css'  href='//fonts.googleapis.com/css?family=Playfair+Display%3Aregular%2Citalic%2C700%2C700italic%2C900%2C900italic&#038;ver=5.9' type='text/css' media='all' />
 <link rel='stylesheet' id='jquery.menu-css-css'  href='http://www.mantto.com.pe/wp-content/themes/structure/js/jQuery.mmenu/css/jquery.mmenu.all.css?ver=5.9' type='text/css' media='all' />
 <link rel='stylesheet' id='js_composer_front-css'  href='http://www.mantto.com.pe/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=5.6' type='text/css' media='all' />
@@ -419,4 +391,3 @@
         <!---------------------->
 	
 </body>
-</html>
